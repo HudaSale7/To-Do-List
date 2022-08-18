@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  height: 100vh;
+  position: relative;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.header .title {
+  background-color: #54bab9;
+  width: fit-content;
+  padding: 8px;
+  border-radius: 5px 5px 0 0;
+  color: white;
+  font-size: 13px;
+}
+
+.header .add-task {
+  background-color: #eee;
+  width: 500px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  border-radius: 0 10px 10px 10px;
+}
+
+.header .add-task input {
+  height: 50%;
+  width: 80%;
+  border: none;
+  outline: none;
+  padding-left: 8px;
+  border-radius: 5px;
+}
+.header .add-task .btn {
+  background-color: #54bab9;
+  color: white;
+  padding: 8px;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+@media (max-width: 520px) {
+  .header .add-task {
+    width: 400px;
+  }
+  .header .add-task .btn {
+    font-weight: 400;
+    font-size: 12px;
+  }
+}
+
+.header .add-task .btn:hover {
+  cursor: pointer;
+}
+
+.container .my-list {
+  background-color: #eee;
+  padding: 20px;
+  border-radius: 10px;
+  max-height: 450px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.container .my-list p {
+  text-align: center;
+  color: rgb(0, 0, 0, 0.6);
+}
+
+.container .my-list div {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.container .my-list div p {
+  color: black;
+}
+
+.container .my-list div span {
+  background-color: red;
+  color: white;
+  padding: 2px 3px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.container .my-list div span:hover {
+  cursor: pointer;
+}
+
+::placeholder {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
