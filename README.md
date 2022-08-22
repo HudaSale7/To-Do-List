@@ -1,4 +1,4 @@
 # To-Do-List
-Finish Your Task Quickly
+Add and manage your task to finish it as soon as you can !
 
 ![to do list](./img/todolist.PNG)
